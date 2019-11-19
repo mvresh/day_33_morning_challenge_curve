@@ -16,7 +16,19 @@ class _AnimatedDotsState extends State<AnimatedDots> {
 
 class MyCurve extends Curve {
   @override
-  double transform(double t) {
-    return 0;
+  double transformInternal(double t) {
+    double half = 0.4;
+
+    if(t > 0.2 && t <= half){
+      return Curves.ease.transform((5*t)-1.0);
+
+    }
+    else if(t > half && t < 0.6){
+      return Curves.decelerate.transform(3-(5*t));
+    }
+
+    else{
+      return 0.0;
+    }
   }
 }
