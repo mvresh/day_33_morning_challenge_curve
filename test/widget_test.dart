@@ -9,5 +9,10 @@ void main() {
   Curve myCurve = MyCurve();
   print(myCurve.transform(0.5));
   test("Testing curve value", (){
-    expect(myCurve.transformInternal(0.0), 0.0);  });
+    expect(myCurve.transformInternal(0.2), 0.0);
+    expect(myCurve.transformInternal(0.2), 0.0);
+    expect(myCurve.transformInternal(0.21), Curves.ease.transformInternal(0.01));});
+
+});
+    
 }
