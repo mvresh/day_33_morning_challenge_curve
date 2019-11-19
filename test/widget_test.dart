@@ -6,9 +6,8 @@ import 'package:day_33_morning_challenge_curve/main.dart';
 
 
 void main() {
-  Curve myCurve = Curves.ease;
+  Curve myCurve = MyCurve();
   print(myCurve.transform(0.5));
   test("Testing curve value", (){
-    expect(5+2, 7);
-  });
+    expect(myCurve.transformInternal(0.0), 0.0);  });
 }

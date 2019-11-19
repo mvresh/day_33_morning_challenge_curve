@@ -13,3 +13,10 @@ class _AnimatedDotsState extends State<AnimatedDots> {
     return Container();
   }
 }
+
+class MyCurve extends Curve {
+  @override
+  double transformInternal(double t) {
+    return 0;
+  }
+}
