@@ -16,7 +16,7 @@ class _AnimatedDotsState extends State<AnimatedDots> {
 
 class MyCurve extends Curve {
   @override
-  double transformInternal(double t) {
+  double transform(double t) {
     return 0;
   }
 }
