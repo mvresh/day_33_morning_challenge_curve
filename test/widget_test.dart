@@ -15,10 +15,10 @@ void main() {
     expect(myCurve.transform(0.4), Curves.ease.transform(1));
     expect(myCurve.transform(0.45), Curves.decelerate.transform(0.75));
     expect(myCurve.transform(0.5), Curves.decelerate.transform(0.5));
-    expect(myCurve.transform(0.75), Curves.decelerate.transform(0.25));
-    expect(myCurve.transform(.8), Curves.decelerate.transform(0));
-    expect(myCurve.transform(.81), 0.0);
-    expect(myCurve.transform(.9), 0.0);
+    expect(myCurve.transform(0.55), Curves.decelerate.transform(0.25));
+    expect(myCurve.transform(.6), Curves.decelerate.transform(0));
+    expect(myCurve.transform(.7), 0.0);
+    expect(myCurve.transform(.8), 0.0);
     expect(myCurve.transform(1.0), 0.0);
   },);
 }
